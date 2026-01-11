@@ -45,9 +45,8 @@ export default function Favorites() {
                           <div className="card-desc d-md-none">
                             <p className="mb-0 text-muted">
                               تيشيرت شتوي أنيق، مصنوع من خامة دافئة ومريحة،
-                              مناسب للاستخدام اليومي وفي الأجواء الباردة. تصميم
-                              عصري بخطوط بسيطة، سهل التنسيق مع مختلف الإطلالات،
-                              ويوفر لكِ الراحة والأناقة طوال اليوم.
+                              مناسب للاستخدام اليومي وفي الأجواء الباردة. 
+                          
                             </p>
                           </div>
                           <div className="pricenumber fw-bold d-flex gap-1 d-md-none">
