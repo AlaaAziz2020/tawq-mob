@@ -223,7 +223,39 @@ font-size: 14px;
 
 /* ================= MOBILE ================= */
 
+@media(max-width:480px) {
+  
+}
 
+/* @media (min-width: 400px) and (max-width: 767px){
+      .customerbtn {
+        padding: 16px 10px;
+    }
+
+} */
+/* ================= TABLET ================= */
+
+/* ================= TABLET (481px → 768px) ================= */
+@media(max-width:320px){
+.tn-nav-sidebar.open {
+    left: 42%;
+    right: 0;
+    top: 32%;
+}
+}
+@media(max-width:480px){
+     .seller-nav-main {
+      position: fixed;
+    top: 79px;
+    left: 0;
+    top: 64px;
+  } 
+  .tn-nav-sidebar.open {
+         left: 50%;
+        top: 21%;
+  }
+}
+/* ================= TABLET LANDSCAPE (769px → 843px) ================= */
 @media (max-width: 767px) {
   /* .tn-nav-main {
     height: auto;
@@ -310,36 +342,6 @@ font-size: 14px;
 
 
 }
-/* @media (min-width: 400px) and (max-width: 767px){
-      .customerbtn {
-        padding: 16px 10px;
-    }
-
-} */
-/* ================= TABLET ================= */
-
-/* ================= TABLET (481px → 768px) ================= */
-@media(max-width:320px){
-.tn-nav-sidebar.open {
-    left: 42%;
-    right: 0;
-    top: 32%;
-}
-}
-@media(max-width:480px){
-     .seller-nav-main {
-      position: fixed;
-    top: 79px;
-    left: 0;
-    top: 64px;
-  } 
-  .tn-nav-sidebar.open {
-         left: 50%;
-        top: 21%;
-  }
-}
-
-/* ================= TABLET LANDSCAPE (769px → 843px) ================= */
 
 @media (min-width: 768px) and (max-width: 843px) {
     .tn-nav-sidebar.open {
