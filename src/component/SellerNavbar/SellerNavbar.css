@@ -145,14 +145,14 @@ background: linear-gradient(90deg, #000000, #91b4ff);
   overflow-y: auto;
 }
 
-.tn-nav-sidebar.open {
+/* .tn-nav-sidebar.open {
   right: 0;            
 }
 
 .tn-nav-sidebar.open {
     left: 61%;
     top: 18%;
-}
+} */
 
 
 .tn-nav-close-sidebar {
@@ -218,6 +218,20 @@ font-size: 14px;
 }
 .scroll-area {
   max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+.tn-nav-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80vw;          /* مناسب للموبايل */
+  max-width: 320px;
+  height: 100vh;
+  background: #fff;
+  z-index: 10001;
+  padding: 20px;
+  transition: right 0.3s ease;
+  direction: rtl;
   overflow-y: auto;
 }
 
