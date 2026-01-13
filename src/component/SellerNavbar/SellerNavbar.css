@@ -7,17 +7,19 @@
 
 /* ================= MAIN NAVBAR ================= */
 .tn-nav-main {
-    background: #1d3a77;
-    padding: 12px 20px;
-    width: 100%;
-    position: fixed;
-    top: 68px;
-    left: 0;
-    z-index: 9999;
-    height: 68px;
-    display: flex;
-    align-items: center;
+  background: #1d3a77;
+  padding: 12px 20px;
+  width: 100%;
+  position: fixed;
+  top: 68px;
+  left: 0;
+  z-index: 9999;
+  height: 68px;
+  display: flex;
+  align-items: center;
 
+  /* مهم جداً */
+  position: relative;
 }
 
 .tn-nav-main .container {
@@ -87,68 +89,59 @@
   cursor: pointer;
 }
 
-/* ================= OVERLAY ================= */
-.tn-nav-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s;
-  z-index: 10000;
-}
-
-.tn-nav-overlay.show {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* ================= SIDEBAR ================= */
+/* ================= DROPDOWN MENU ================= */
 .tn-nav-sidebar {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 85vw;
-  max-width: 320px;
-  height: 100vh;
+  position: absolute;
+  top: calc(100% + 10px);    /* تحت الـ navbar */
+  right: 16px;              /* من اليمين */
+  width: 260px;
   background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
   z-index: 10001;
-  padding: 20px;
-  transition: right 0.3s ease;
+  padding: 10px 16px;
   direction: rtl;
-  overflow-y: auto;
+
+  /* مخفية */
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: 0.25s ease;
 }
 
 .tn-nav-sidebar.open {
-  right: 0; /* ✅ لازقة يمين الشاشة */
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
-/* Close button */
+/* زر الإغلاق */
 .tn-nav-close-sidebar {
-  position: sticky;
-  top: 8px;
-  left: 8px;
   background: none;
   border: none;
-  font-size: 26px;
+  font-size: 22px;
   cursor: pointer;
-  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 8px;
 }
 
-/* ================= SIDEBAR LINKS ================= */
+/* ================= DROPDOWN LINKS ================= */
 .tn-nav-sidebar-links {
   list-style: none;
-  padding: 0;
-  margin-top: 15px;
 }
 
 .tn-nav-sidebar-links li {
   padding: 14px 0;
-  border-bottom: 1px solid #e6e6e6;
-  cursor: pointer;
+  border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+}
+
+.tn-nav-sidebar-links li:last-child {
+  border-bottom: none;
 }
 
 .tn-nav-sidebar-item {
@@ -160,99 +153,27 @@
 }
 
 .tn-nav-sidebar-links svg {
-  color: #1d3a77;
   width: 20px;
+  color: #1d3a77;
 }
 
-/* Scroll only links */
-.scroll-area {
-  max-height: calc(100vh - 90px);
-  overflow-y: auto;
-}
-@media (max-width: 360px) {
-  .tn-nav-sidebar {
-    width: 90vw;
-  }
-  
-  /* .tn-nav-sidebar.open {
-    left: 34%;
-    right: -1px;
-    top: 20%;
-} */
-/* .tn-nav-sidebar.open {
-        top: 129px;
-        left: 20%;
-        max-width: 258px;
-    } */
-         .tn-nav-sidebar.open {
-        top: 129px;
-        left: 67%;
-        max-width: 258px;
-    }
-}
-/* ================= RESPONSIVE ================= */
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   .sellertn-nav-linkss {
-    display: none; /* Hide desktop links in smaller screens */
+    display: none;
   }
 
   .tn-nav-hamburger {
-    display: block; /* Show hamburger for smaller screens */
-  }
-
-  .tn-nav-app-btn {
-    font-size: 12px; /* Adjust button font size */
-    padding: 6px 14px; /* Shrink padding for smaller buttons */
-  }
-
-  .tn-nav-sidebar {
-    position: fixed;
-    top: 0;
-    left: -85%;
-    width: 85vw;
-    max-width: 280px; /* Adjust width to fit smaller screens */
-    height: 100vh;
-    transition: left 0.3s ease;
-  }
-
-  .tn-nav-sidebar.open {
-    left: 0; /* Sidebar fully visible */
+    display: block;
   }
 }
 
-@media (max-width: 1024px) {
-  .sellertn-nav-linkss {
-    display: none; /* Hide desktop links for tablets */
-  }
-
-  .tn-nav-hamburger {
-    display: block; /* Show hamburger menu for tablets */
-  }
-
-  .tn-nav-app-btn {
-    font-size: 14px; /* Adjust for medium screens */
-    padding: 8px 18px; /* Slightly larger padding */
-  }
-
+@media (max-width: 360px) {
   .tn-nav-sidebar {
-    position: fixed;
-    top: 0;
-    left: -75%;
-    width: 75vw;
-    max-width: 320px; /* Adjust sidebar width for medium screens */
-    height: 100vh;
-    transition: left 0.3s ease;
-  }
-
-  .tn-nav-sidebar.open {
-   left: 81px;
+width: 78vw;
+        left: 71px;
         top: 22%;
-  }
+        border-radius: 0;
+    }
+  
 }
-
-.scroll-area {
-  max-height: calc(100vh - 90px); /* Ensure scrolling functionality */
-  overflow-y: auto; /* Enable scroll for contents */
-}
-
