@@ -142,6 +142,10 @@ import Slider from './component/Slider/Slider';
 import SellerUppernav from './component/SellerUppernav/SellerUppernav';
 import OffersDetails from './component/OffersDetails/OffersDetails';
 import Myaddvertisements from './component/Myaddvertisements/Myaddvertisements';
+import SellerPrivacy from './component/SellerPrivacy/SellerPrivacy';
+import SellereSupport from './component/SellereSupport/SellereSupport';
+import SellerFinancialSupport from './component/SellerFinancialSupport/SellerFinancialSupport';
+import SellerTerms from './component/SellerTerms/SellerTerms';
 
 const router = createHashRouter([
   {
@@ -299,6 +303,11 @@ const router = createHashRouter([
       { path:'/seller/sellermaddisupport', element:<SellerMaddiSupport /> },
       { path:'/seller/selleraynisupport', element:<SellerAyniSupport /> },
       {path:'/seller/sellermystore',element:<SellerMyStore/>},
+      {path:'/seller/selleresupport',element:<SellereSupport/>},
+      {path:'/seller/sellerfinancialsupport',element:<SellerFinancialSupport/>},
+      {path:'/seller/sellerprivacy',element:<SellerPrivacy/>},
+      {path:'/seller/sellerterms',element:<SellerTerms/>},
+
    {
        path: "sellerrelatedproductsdetails/:id",
        element: <SellerRelatedProducts/>

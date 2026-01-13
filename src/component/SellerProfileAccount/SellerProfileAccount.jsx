@@ -27,39 +27,51 @@ import { Link } from "react-router-dom";
    return (
      <div className="profile-wrapper container" style={{marginTop:"90px"}}>
 
-      
-       <div className="marketing-sidebar ">
-         <button className="side-btn active" style={{alignItem:"center"}}>
-           <img src={profilepicture} alt="" /> حسابي الشخصي
+      <div className="marketing-sidebar mt-5 pt-5 ">
+   
+           {/* <button className="side-btn">
+            <img src={profilepicture} /> حسابي الشخصي 
+           </button> */}
+   
+    <button className="side-btn2 active text-white">
+     <Link
+       to="/seller/sellerprofileaccount"
+       className="text-white text-decoration-none d-flex align-items-center"
+     >
+       <img className="ps-3 sidebar-icon " src={profilepicture} alt="Profile" />
+       حسابي الشخصي
+     </Link>
+   </button>
+   
+             
+     <button className="side-btn2 ">
+         <Link to="/seller/sellerbankaccount" className="text-dark text-decoration-none">
+           <img className='ps-3' src={accountimg} alt="Bank Account" />
+           الحساب البنكي
+         </Link>
          </button>
-
-         <button className="side-btn">
-           <img src={accountimg} alt="" />
-           <Link to='/seller/sellerbankaccount' className="text-dark text-decoration-none"> الحساب البنكي</Link>
-         </button>
-
-<Link to='/seller/sellermarketing' className="text-dark text-decoration-none">
-  <button className="side-btn">
-    <img src={marketingimg} alt="" />
-    التسويق
-  </button>
-</Link>
-
-         <button className="side-btn">
-                       <img src={survimg} alt="" /> 
-
-            <Link to='/seller/sellercontractpage' className="text-dark text-decoration-none"> 
-           التقييم والعقود
-            </Link>
-         </button>
-
-         <button className="side-btn logout">
-           <img src={logoutimg} alt="" /> 
-             <Link to='/seller/sellerlogoutconfirm' className="text-white text-decoration-none"> 
-          تسجيل الخروج
-            </Link>
-         </button>
-       </div>
+     <button className="side-btn2 ">
+       <Link to="/seller/sellermarketingreferral" className="text-dark text-decoration-none">
+         <img className='ps-3' src={marketingimg} alt="Marketing" />
+         التسويق
+       </Link>
+     </button>
+   
+     <button className="side-btn2">
+       <Link to="/seller/sellercontractpage" className="text-dark text-decoration-none">
+         <img className='ps-3' src={survimg} alt="Contracts" />
+         التقييم والعقود
+       </Link>
+     </button>
+   
+       <button className="side-btn2 logout">
+       <Link to="/accounttype" className="text-white text-decoration-none">
+         <img className='ps-3' src={logoutimg} alt="Logout" />
+         تسجيل الخروج
+       </Link>
+     </button>
+   
+         </div>
 
        <div className="profile-content">
 

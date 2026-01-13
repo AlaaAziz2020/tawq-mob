@@ -34,7 +34,7 @@ export default function SellerUppernav() {
               fill="#1D3A77"
             />
           </svg> */}
-          <Link to={"/sellerlogoutconfirm"}>
+          <Link to={"/seller/sellerlogoutconfirm"}>
             <i className="fa fa-user tn-nav-icon"></i>
           </Link>
         </div>

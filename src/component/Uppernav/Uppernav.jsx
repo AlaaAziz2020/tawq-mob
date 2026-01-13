@@ -34,7 +34,7 @@ export default function UpperNav() {
               fill="#1D3A77"
             />
           </svg>
-          <Link to={"/accounttype"}>
+          <Link to={"/logoutconfirm"}>
             <i className="fa fa-user tn-nav-icon"></i>
           </Link>
         </div>

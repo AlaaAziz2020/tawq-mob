@@ -8,6 +8,7 @@ import Instagram from "../../assets/instagram.png";
 import location from '../../assets/location.png';
 import mail from '../../assets/mail.png';
 import phone from '../../assets/phone.png';
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -28,10 +29,19 @@ export default function Footer() {
           <div className="col-6 col-md-3 footer-col">
             <h3>الشركة</h3>
             <ul className="company-list">
-              <li>من نحن</li>
-              <li>الخدمات</li>
-              <li>تواصل معنا</li>
-              <li>فروع المؤسسة</li>
+              <Link to="/abouttawq" className="text-decoration-none">
+               <li className="text-white text-decoration-none">من نحن</li>
+              </Link>
+                      <Link to="/privacy" className="text-decoration-none">
+               <li className="text-white ">سياسة الخصوصية</li>
+              </Link>
+                      <Link to="/terms" className="text-decoration-none">
+               <li className="text-white ">الشروط والأحكام</li>
+              </Link>
+             
+              {/* <li>الخدمات</li>
+              <li>تواصل معنا</li>*/}
+              <li>فروع المؤسسة</li> 
             </ul>
           </div>
 
@@ -39,8 +49,14 @@ export default function Footer() {
           <div className="col-6 col-md-3 footer-col">
             <h3>خدماتنا</h3>
             <ul className="service-list">
-              <li>تاجر</li>
-              <li>مستخدم</li>
+                             <Link to="/seller/sellerlogin" className="text-decoration-none">
+               <li className="text-white ">تاجر </li>
+              </Link>
+              {/* <li>تاجر</li> */}
+                                 <Link to="/login" className="text-decoration-none">
+               <li className="text-white "> مستخدم</li>
+              </Link>
+              {/* <li>مستخدم</li> */}
               <li>مسوق</li>
               <li>مساعدتك في الشراء والبيع</li>
             </ul>

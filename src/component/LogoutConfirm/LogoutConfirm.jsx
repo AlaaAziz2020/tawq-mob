@@ -16,37 +16,24 @@ import { Link, useNavigate } from "react-router-dom";
 export default function LogoutConfirm() {
   const navigate = useNavigate();
   return (
-    <div className="logout-wrapper container" >
+    <div className="logout-wrapper container pt-4" >
 
       {/* ==== SIDEBAR ==== */}
     
-           <div className="logoutmarketing-sidebar ">
-             {/* <button className="side-btn " style={{alignItem:"center"}}>
-                <img src={profileimg} alt="" />
-               حسابي الشخصي
-             </button> */}
+           {/* <div className="logoutmarketing-sidebar ">
+         
                       <Link to="/profileaccount" className="side-btn white mt-5 ">
                         <img src={profileimg} alt="" />
                         <span className="logout-text px-2">حسابي الشخصي</span>
                       </Link>
     
-             {/* <button className="side-btn">
-               <img src={accountimg} alt="" />
-               <Link to='/bankaccount' className="text-dark text-decoration-none"> الحساب البنكي</Link>
-             </button> */}
+        
     
   <Link to="/marketing" className="side-btn white">
     <img src={marketingimg} alt="" />
     <span className="px-2">التسويق</span>
   </Link>
-             {/* <button className="side-btn">
-                           <img src={survimg} alt="" /> 
     
-                <Link to='/contractpage' className="text-dark text-decoration-none"> 
-               التقييم والعقود
-                </Link>
-             </button>
-     */}
         <Link to="/myaddvertisements" className="side-btn white">
                    <img src={myadvertisements} alt="" />
                    <span className="px-2">إعلاناتي</span>
@@ -62,15 +49,15 @@ export default function LogoutConfirm() {
                 </Link>
              </button>
 
-           </div>
+           </div> */}
 
       {/* ==== LOGOUT CONTENT ==== */}
-      <div className="logout-content">
-        <h2 className="logout-title">هل تريد تسجيل الخروج ؟</h2>
+      <div className="logout-content mt-5 ">
+        <h2 className="logout-title mt-5">هل تريد تسجيل الخروج ؟</h2>
 
    <button
       className="logout-main-btn2"
-      onClick={() => navigate("/accounttype")}
+      onClick={() => navigate("/seller/sellerlogin")}
     >
       تسجيل الخروج
     </button>

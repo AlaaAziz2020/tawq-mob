@@ -2,7 +2,8 @@ import React from 'react'
 import './SellerMarketingReferral.css'
 import giftImg from '../../assets/gift.png'
 import phoneIcon from '../../assets/phoneicon.png'
-import profilepicture from "../../assets/profileicon.png";
+import profilepicture from "../../assets/profile-img.png";
+
 import accountimg from "../../assets/account-img.png";
 import marketingimg from "../../assets/m-img.png";
 import survimg from "../../assets/surv-img.png";
@@ -19,8 +20,19 @@ export default function SellerMarketingReferral() {
         {/* <button className="side-btn">
          <img src={profilepicture} /> حسابي الشخصي 
         </button> */}
-  <button className="side-btn2 ">
 
+ <button className="side-btn2">
+  <Link
+    to="/seller/sellerprofileaccount"
+    className="text-dark text-decoration-none d-flex align-items-center"
+  >
+    <img className="ps-3 sidebar-icon" src={profilepicture} alt="Profile" />
+    حسابي الشخصي
+  </Link>
+</button>
+
+          
+  <button className="side-btn2 ">
       <Link to="/seller/sellerbankaccount" className="text-dark text-decoration-none">
         <img className='ps-3' src={accountimg} alt="Bank Account" />
         الحساب البنكي

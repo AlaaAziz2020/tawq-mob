@@ -132,27 +132,35 @@
 .tn-nav-sidebar {
   position: fixed;
   top: 0;
-  left: -320px;
+  right: -320px;       /* ⬅️ مخفي بره من اليمين */
   width: 300px;
   height: 100vh;
   background: #fff;
   z-index: 10001;
   padding: 20px;
-  transition: 0.4s;
+  transition: right 0.3s ease;
   direction: rtl;
 }
+
+.tn-nav-sidebar.open {
+  right: 0;            /* ⬅️ يطلع من اليمين */
+}
+
 
 .tn-nav-sidebar.open {
   left: 0;
 }
 
 .tn-nav-close-sidebar {
+  position: absolute;
+  top: 16px;
+  left: 16px;   /* في RTL يبقى على الشمال */
   background: none;
   border: none;
   font-size: 26px;
-  margin-bottom: 20px;
   cursor: pointer;
 }
+
 
 .tn-nav-sidebar-header h3 {
   margin: 0;
@@ -168,7 +176,7 @@
 .tn-nav-sidebar-links {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+    margin-top: 37px;
 }
 
 .tn-nav-sidebar-links li {
@@ -184,14 +192,15 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 18px;
+font-size: 14px;
 }
 
 .tn-nav-sidebar-links svg {
   color: #1d3a77;
+  width: 23px;
 }
 
-.tn-nav-logout-btn {
+.sellertn-nav-logout-btn {
   width: 100%;
   background: #ed3a3a;
   color: #fff;
@@ -199,7 +208,7 @@
   border: none;
   border-radius: 10px;
   margin-top: 25px;
-  font-size: 16px;
+  font-size: 11px;
   cursor: pointer;
 }
 
@@ -211,6 +220,10 @@
     padding: 12px 10px;
     top: 70px;
   } */
+   .sellertn-nav-logout-btn svg{
+            width: 18px;
+
+   }
 
   .tn-nav-wrapper {
     flex-direction: row;
@@ -261,7 +274,7 @@
   }
 
   .tn-nav-sidebar {
-    width: 260px;
+        width: 213px;
   }
   /* .tn-nav-main {
     top: 29% !important;

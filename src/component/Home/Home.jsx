@@ -95,7 +95,7 @@ export default function Home() {
           <div className="products-info">
         <button
   className="customerbtn tn-nav-app-btn d-flex justify-content-center align-items-center"
-  onClick={() => navigate("/marketing")}
+  onClick={() => navigate("/seller/sellermarketingreferral")}
 >
   <p className="btn-text mb-0">تسوق الآن</p>
   <i className="fa-solid fa-arrow-left ms-2"></i>
@@ -125,9 +125,10 @@ export default function Home() {
       <Categories />
 
        {/* <ProductsSection />  */}
+                    <OffersTawq/> 
+
          <Offerstawqnajah /> 
        {/* <Offers/>   */}
-             <OffersTawq/> 
 
       <SuccessPartners />
     </div>

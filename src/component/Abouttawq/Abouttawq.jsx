@@ -6,7 +6,7 @@ export default function Abouttawq() {
     <div className="tawqabout-wrapper pb-5 mt-3 pb-5" >
       <div className="container  pb-5 mt-5 mb-5 ">
 
-        <h1 className="about-title mt-5 pt-5 ">عن طوق نجاة</h1>
+        <h1 className="about-title mt-5 pt-5 ">من نحن؟ </h1>
 
         <div className="about-card mb-5 pb-5">
 

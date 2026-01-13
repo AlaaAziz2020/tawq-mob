@@ -15,7 +15,7 @@ export default function SellerLogoutConfirm() {
     <div className="logout-wrapper container">
 
       {/* اليمين - القائمة الجانبية */}
-  <div className="marketing-sidebar mt-5">
+  {/* <div className="marketing-sidebar mt-5">
 
   <button className="side-btn">
     <Link to="/seller/sellerprofileaccount" className="text-dark text-decoration-none">
@@ -52,15 +52,15 @@ export default function SellerLogoutConfirm() {
     </Link>
   </button>
 
-</div>
+</div> */}
 
       {/* الشمال - محتوى تسجيل الخروج */}
-      <div className="logout-content">
-        <h2 className="logout-title">هل تريد تسجيل الخروج ؟</h2>
+      <div className="logout-content pt-5">
+        <h2 className="logout-title mt-5">هل تريد تسجيل الخروج ؟</h2>
 
       <button
       className="logout-main-btn"
-      onClick={() => navigate("/accounttype")}
+      onClick={() => navigate("/login")}
     >
       تسجيل الخروج
     </button>

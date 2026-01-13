@@ -188,7 +188,13 @@ form {
   border: 1px solid #E9E9E9;
   border-radius: 12px;
 }
-
+.keyphone-ar {
+  direction: rtl;                 /* RTL */
+  padding-right: 14px;            /* مسافة للنص */
+  padding-left: 36px;             /* مسافة للأيقونة */
+  background-position: left 12px center !important;
+  background-size: 12px;
+}
 /* توحيد ارتفاع كل المدخلات */
 .inputs,
 .keyphone-ar,
@@ -310,7 +316,7 @@ textarea.form-control {
   .community-page { 
     padding-top: 0px;
             padding-bottom: 73px;
-                    margin-top: 50% !important;
+        margin-top: 38% !important;
 
    } /* phones */
 
