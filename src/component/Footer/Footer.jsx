@@ -53,7 +53,7 @@ export default function Footer() {
                <li className="text-white ">تاجر </li>
               </Link>
               {/* <li>تاجر</li> */}
-                                 <Link to="/login" className="text-decoration-none">
+                                 <Link to="/" className="text-decoration-none">
                <li className="text-white "> مستخدم</li>
               </Link>
               {/* <li>مستخدم</li> */}
