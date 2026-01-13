@@ -312,10 +312,11 @@ font-size: 14px;
 
 /* ================= TABLET (481px → 768px) ================= */
 @media(max-width:320px){
-    .tn-nav-sidebar.open {
-    left: 34%;
-    top: 19%;
-  }
+.tn-nav-sidebar.open {
+    left: 42%;
+    right: 0;
+    top: 32%;
+}
 }
 @media(max-width:480px){
      .seller-nav-main {
