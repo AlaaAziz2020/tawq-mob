@@ -168,7 +168,16 @@
   max-height: calc(100vh - 90px);
   overflow-y: auto;
 }
-
+@media (max-width: 360px) {
+  .tn-nav-sidebar {
+    width: 90vw;
+  }
+  .tn-nav-sidebar.open {
+    left: 34%;
+    right: -1px;
+    top: 20%;
+}
+}
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   .sellertn-nav-linkss {
@@ -192,14 +201,10 @@
  } */
     .tn-nav-sidebar.open {
         top: 129px;
-        left: 32%;
+        left: 63%;
         max-width: 258px;
     }
 
 }
 
-@media (max-width: 360px) {
-  .tn-nav-sidebar {
-    width: 90vw;
-  }
-}
+
