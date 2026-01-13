@@ -166,7 +166,12 @@
   .tn-nav-hamburger {
     display: block;
   }
-
+    .tn-nav-sidebar {
+        width: 44vw;
+        left: 56%;
+        top: 19%;
+        border-radius: 0;
+    }
 }
 
 /* @media (max-width: 360px) {
@@ -183,6 +188,19 @@ width: 78vw;
         width: 44vw;
         left: 56%;
         top: 19%;
+        border-radius: 0;
+      }
+    .tn-nav-sidebar.open {
+        left: 56%;
+    }
+  
+}
+
+@media (max-width:1024px){
+      .tn-nav-sidebar {
+        width: 44vw;
+        left: 56%;
+        top: 18%;
         border-radius: 0;
       }
     .tn-nav-sidebar.open {
