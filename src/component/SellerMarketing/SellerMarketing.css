@@ -67,12 +67,12 @@
   margin-bottom: 15px;
 }
 
-.marketing-text {
-  font-size: 28px;
-  color: #000;
-  margin: 0 auto 40px auto;
-  font-weight: bold;
-  line-height: 36px;
+.sellermarketing-text {
+color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 0 auto 40px;
 }
 
 .marketing-btn {

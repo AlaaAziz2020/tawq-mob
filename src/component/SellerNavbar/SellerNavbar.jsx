@@ -33,7 +33,7 @@ const sidebarLinks = [
       <div className="tn-nav-main seller-nav-main">
         <Container className="tn-nav-wrapper">
           
-          <div className="tn-buttons-box">
+          <div className="tn-buttons-box pt-2">
             <button className="tn-nav-app-btn">
               تحميل التطبيق
             </button>

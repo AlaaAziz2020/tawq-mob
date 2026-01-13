@@ -57,12 +57,12 @@
   margin: 0 auto 25px auto;
 }
 
-.marketing-text {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 40px;
-  margin-bottom: 40px;
-  color: #000;
+.customermarketing-text {
+color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 0 auto 40px;
 }
 
 .marketing-main-btn {
@@ -111,7 +111,7 @@
     width: 220px; /* Resize logo to fit better on tablets */
   }
 
-  .marketing-text {
+  .customermarketing-text {
     font-size: 16px; /* Smaller text for responsive design */
     line-height: 34px; /* Adjust line height for compact layout */
     margin-bottom: 30px; /* Reduce bottom margin */
@@ -129,7 +129,7 @@
     width: 100%; /* Sidebar takes full width */
   }
 
-  .marketing-text {
+  .customermarketing-text {
     font-size: 20px;
     line-height: 30px;
   }
@@ -202,7 +202,7 @@
   margin: 0 auto 25px auto;
 }
 
-.marketing-text {
+.customermarketing-text {
   font-size: 24px;
   font-weight: 700;
   line-height: 40px;
@@ -258,7 +258,7 @@
     width: 220px; /* Resize logo to fit better on tablets */
   }
 
-  .marketing-text {
+  .customermarketing-text {
     font-size: 20px; /* Smaller text for responsive design */
     line-height: 34px; /* Adjust line height for compact layout */
     margin-bottom: 30px; /* Reduce bottom margin */
@@ -286,7 +286,7 @@
     width: 100%; /* Sidebar takes full width */
   }
 
-  .marketing-text {
+  .customermarketing-text {
     font-size: 20px;
     line-height: 30px;
   }

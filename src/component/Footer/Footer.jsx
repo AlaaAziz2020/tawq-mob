@@ -57,8 +57,13 @@ export default function Footer() {
                <li className="text-white "> مستخدم</li>
               </Link>
               {/* <li>مستخدم</li> */}
-              <li>مسوق</li>
-              <li>مساعدتك في الشراء والبيع</li>
+                                               <Link to="" className="text-decoration-none">
+
+              <li className="text-white">مسوق</li>
+              </Link>
+              <Link>
+                            <li className="text-white">مساعدتك في الشراء والبيع</li>
+              </Link>
             </ul>
           </div>
 
