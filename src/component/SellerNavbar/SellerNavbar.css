@@ -173,7 +173,8 @@
         border-radius: 0;
     }
     .tn-nav-sidebar.open{
-              top: 20%;
+              top: 18%;
+              background-color: red;
 
     }
 }
