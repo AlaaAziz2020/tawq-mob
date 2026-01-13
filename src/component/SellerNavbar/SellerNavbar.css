@@ -191,62 +191,68 @@
     }
 }
 /* ================= RESPONSIVE ================= */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   .sellertn-nav-linkss {
-    display: none;
+    display: none; /* Hide desktop links in smaller screens */
   }
 
   .tn-nav-hamburger {
-    display: block;
+    display: block; /* Show hamburger for smaller screens */
   }
 
   .tn-nav-app-btn {
-    font-size: 12px;
-    padding: 6px 14px;
+    font-size: 12px; /* Adjust button font size */
+    padding: 6px 14px; /* Shrink padding for smaller buttons */
   }
-  /* .tn-nav-sidebar {
+
+  .tn-nav-sidebar {
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -85%;
     width: 85vw;
-    max-width: 284px;
- } */
-    .tn-nav-sidebar.open {
-        top: 129px;
-        left: 19%;
-        max-width: 258px;
-    }
+    max-width: 280px; /* Adjust width to fit smaller screens */
+    height: 100vh;
+    transition: left 0.3s ease;
+  }
 
+  .tn-nav-sidebar.open {
+    left: 0; /* Sidebar fully visible */
+  }
 }
 
-/* @media (max-width:1024px){
-      .tn-nav-sidebar.open {
-        top: 129px;
-        left: 75%;
-        max-width: 258px;
-    }
+@media (max-width: 1024px) {
+  .sellertn-nav-linkss {
+    display: none; /* Hide desktop links for tablets */
+  }
+
+  .tn-nav-hamburger {
+    display: block; /* Show hamburger menu for tablets */
+  }
+
+  .tn-nav-app-btn {
+    font-size: 14px; /* Adjust for medium screens */
+    padding: 8px 18px; /* Slightly larger padding */
+  }
+
+  .tn-nav-sidebar {
+    position: fixed;
+    top: 0;
+    left: -75%;
+    width: 75vw;
+    max-width: 320px; /* Adjust sidebar width for medium screens */
+    height: 100vh;
+    transition: left 0.3s ease;
+  }
+
+  .tn-nav-sidebar.open {
+   left: 81px;
+        top: 22%;
+  }
 }
 
-@media (max-width: 1044px) {
-    .tn-nav-sidebar.open {
-        top: 129px;
-        left: 78%;
-        max-width: 258px;
-    }
+.scroll-area {
+  max-height: calc(100vh - 90px); /* Ensure scrolling functionality */
+  overflow-y: auto; /* Enable scroll for contents */
 }
 
-@media (max-width: 2025px) {
-    .tn-nav-sidebar.open {
-        top: 129px;
-        left: 85%;
-        max-width: 258px;
-    }
-}
-
-@media (min-width: 2026px) {
-    .tn-nav-sidebar.open {
-        top: 129px;
-        left: 90%;
-        max-width: 258px;
-    }
-} */
