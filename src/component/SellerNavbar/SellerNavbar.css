@@ -214,6 +214,8 @@ width: 78vw;
       }
     .tn-nav-sidebar.open {
         left: 56%;
+                margin-top: 6%;
+
     }
   
 }
